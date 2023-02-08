@@ -3,8 +3,9 @@
 ?>
 
 <hmtl>
+    <link rel="stylesheet" href="style.css">
     <body>
-    <form action="php.php" style="border: 1px solid #000000">
+    <form action="php.php">
         <div class="signup">
             <h1>Student inschrijven</h1>
             <hr>
