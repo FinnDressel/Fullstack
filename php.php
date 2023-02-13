@@ -25,11 +25,11 @@ try {
             <label for="email"> <b>Email</b> </label>
             <input type="text" placeholder="Enter Email" name="email" required
 
-            <label for="name"> <b>Name</b> </label>
-            <input type="text" placeholder="Enter Name" name="name" required>
+            <label for="Firstname"> <b>Firstname</b> </label>
+            <input type="text" placeholder="Enter Firstname" name="firstname" required>
 
-            <label for="password"> <b>Password</b> </label>
-            <input type="password" placeholder="Enter Password" name="password" required>
+            <label for="lastname"> <b>Lastname</b> </label>
+            <input type="text" placeholder="Enter Lastname" name="lastname" required>
 
             <div class="Buttons">
                 <button type="button" class="cancelbtn">Cancel</button>
