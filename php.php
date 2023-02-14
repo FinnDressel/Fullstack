@@ -14,7 +14,7 @@ try {
 } catch (PDOException $e){
     echo "Connection failed: " . $e->getMessage();
 }
-
+//data versturen
 if(isset($_POST['submitButton'])){
 
     $email = $_POST['email'];
