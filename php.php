@@ -21,14 +21,16 @@ if(isset($_POST['submitButton'])){
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
 
-    $query = "INSERT INTO student (firstame, lastname, email) VALUES (firstname, lastname, email)";
-    $query_run = $conn->prepare($query);
-
     $data = [
-        ':firstname' => $firstname,
-        ':lastname' => $lastname,
-        ':email' => $email,
+        'firstname' => $firstname,
+        'lastname' => $lastname,
+        'email' => $email,
     ];
+
+    $query = "INSERT INTO student (firstname, lastname, email) VALUES (:firstname, :lastname, :email)";
+    $query_run = $conn->prepare($query, $data);
+
+
     $query_execute = $query_run->execute($data);
 
     if($query_execute){
