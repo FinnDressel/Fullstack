@@ -74,7 +74,7 @@ if(isset($_POST['submitButton'])){
     </form>
 
     <div>
-        <button class="studentbtn" >Studenten</button>
+        <a href="opleiding.php">Studenten</a>
     </div>
     </body>
 </html>

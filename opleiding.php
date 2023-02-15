@@ -21,11 +21,10 @@ try{
     ?>
 <table border="1" cellpadding="10" cellspacing="0">
     <?php
-    $sn=1;
+
     while ($data = $results->fetch(PDO::FETCH_ASSOC)){
         ?>
     <tr>
-        <td> <?php echo $sn; ?> </td>
         <td> <?php echo $data['idStudentnr']; ?> </td>
         <td> <?php echo $data['firstname']; ?> </td>
         <td> <?php echo $data['lastname']; ?> </td>
@@ -49,6 +48,8 @@ try{
     <title></title>
 </head>
 <body>
+<div>
 
+</div>
 </body>
 </html>
