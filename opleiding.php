@@ -15,6 +15,7 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 
+//data bekijken
 try{
     $query = "SELECT* FROM Student";
     $results = $conn->query($query);
@@ -38,7 +39,6 @@ try{
     } catch (PDOException $e){
     echo "Error: " . $e->getMessage();
 }
-
 ?>
 
 <html lang="en">
@@ -48,8 +48,9 @@ try{
     <title></title>
 </head>
 <body>
-<div>
 
+<div>
+<a href="php.php">Student inschrijven</a>
 </div>
 </body>
 </html>
