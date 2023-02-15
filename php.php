@@ -46,8 +46,12 @@ if(isset($_POST['submitButton'])){
 
 ?>
 
-<hmtl>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <title>Student inshcrijven</title>
+</head>
     <body>
     <form action="php.php" method="post">
         <div class="signup">
@@ -68,5 +72,9 @@ if(isset($_POST['submitButton'])){
             </div>
         </div>
     </form>
+
+    <div>
+        <button class="studentbtn" >Studenten</button>
+    </div>
     </body>
-</hmtl>
+</html>
