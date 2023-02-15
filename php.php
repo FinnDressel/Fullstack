@@ -76,5 +76,6 @@ if(isset($_POST['submitButton'])){
     <div>
         <a href="StudentenLijst.php">Studenten</a>
     </div>
+
     </body>
 </html>
