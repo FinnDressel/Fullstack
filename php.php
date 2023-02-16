@@ -58,10 +58,10 @@ if(isset($_POST['submitButton'])){
             <h1>Student inschrijven</h1>
             <hr>
             <label for="email"> <b>Email</b> </label>
-            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required> <br>
 
             <label for="Firstname"> <b>Firstname</b> </label>
-            <input type="text" placeholder="Enter Firstname" name="firstname" id="Firstname" required>
+            <input type="text" placeholder="Enter Firstname" name="firstname" id="Firstname" required> <br>
 
             <label for="Lastname"> <b>Lastname</b> </label>
             <input type="text" placeholder="Enter Lastname" name="lastname" id="Lastname" required>

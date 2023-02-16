@@ -1,3 +1,61 @@
-.signup{
-    border: 1px solid #000000;
+.Buttons{
+    margin-top: 4%;
+    margin-left: 5%;
 }
+
+#email{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+#Firstname{
+    margin-left: 1px;
+    margin-bottom: 10px;
+}
+
+#Lastname{
+    margin-left: 3px;
+}
+
+.signupbtn{
+    margin-left: 10px;
+}
+
+.signup{
+    margin-left: 40%;
+    margin-right: 45%;
+}
+
+.dropbtn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-left: 685px;
+    margin-top: 5%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+    margin-left: 590px;
+    margin-top: 5%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+
