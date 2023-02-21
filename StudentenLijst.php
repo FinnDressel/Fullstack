@@ -14,7 +14,30 @@ try {
 } catch (PDOException $e){
     echo "Connection failed: " . $e->getMessage();
 }
+//data dropdown menu
+try{
+    $query = "SELECT* FROM Student";
+    $results = $conn->query($query);
+    ?>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <?php
 
+        while ($data = $results->fetch(PDO::FETCH_ASSOC)){
+            ?>
+            <tr>
+                <td> <input type="checkbox" name="studentnr"> <?php echo $data['idStudentnr']; ?> </td>
+                <td> <?php echo $data['firstname']; ?> </td>
+                <td> <?php echo $data['lastname']; ?> </td>
+                <td> <?php echo $data['email']; ?> </td>
+            </tr>
+            <?php
+        }
+        ?>
+    </table>
+    <?php
+} catch (PDOException $e){
+    echo "Error: " . $e->getMessage();
+}
 ?>
 
 <html lang="en">
@@ -24,38 +47,6 @@ try {
     <title>Studenten Lijst</title>
 </head>
 <body>
-
-<div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-        <?php
-        //data dropdown menu
-        try{
-            $query = "SELECT* FROM Student";
-            $results = $conn->query($query);
-            ?>
-            <table border="1" cellpadding="10" cellspacing="0">
-                <?php
-
-                while ($data = $results->fetch(PDO::FETCH_ASSOC)){
-                    ?>
-                    <tr>
-                        <td> <input type="checkbox" name="studentnr"> <?php echo $data['idStudentnr']; ?> </td>
-                        <td> <?php echo $data['firstname']; ?> </td>
-                        <td> <?php echo $data['lastname']; ?> </td>
-                        <td> <?php echo $data['email']; ?> </td>
-                    </tr>
-                    <?php
-                }
-                ?>
-            </table>
-            <?php
-        } catch (PDOException $e){
-            echo "Error: " . $e->getMessage();
-        }
-        ?>
-    </div>
-</div>
 
 <div>
 <a href="php.php">Student inschrijven</a>
