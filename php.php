@@ -35,7 +35,7 @@ if(isset($_POST['submitButton'])){
 
     if($query_execute){
         $_SESSION['message'] = "Inserted Successfully";
-        header('Location: php.php');
+        header('Location: studentopleiding.php');
         exit(0);
     } else{
         $_SESSION['message'] = "Failed";
@@ -72,10 +72,5 @@ if(isset($_POST['submitButton'])){
             </div>
         </div>
     </form>
-
-    <div>
-        <a href="StudentenLijst.php">Studenten</a>
-    </div>
-
     </body>
 </html>

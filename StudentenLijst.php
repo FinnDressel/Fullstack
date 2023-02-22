@@ -16,7 +16,7 @@ try {
 }
 //data dropdown menu
 try{
-    $query = "SELECT* FROM Student";
+    $query = "SELECT* FROM student opleiding";
     $results = $conn->query($query);
     ?>
     <table border="1" cellpadding="10" cellspacing="0">
@@ -25,10 +25,9 @@ try{
         while ($data = $results->fetch(PDO::FETCH_ASSOC)){
             ?>
             <tr>
-                <td> <input type="checkbox" name="studentnr"> <?php echo $data['idStudentnr']; ?> </td>
-                <td> <?php echo $data['firstname']; ?> </td>
-                <td> <?php echo $data['lastname']; ?> </td>
-                <td> <?php echo $data['email']; ?> </td>
+                <td> <?php echo $data['idStudentnr']; ?> </td>
+                <td> <?php echo $data['startdatum']; ?> </td>
+                <td> <?php echo $data['idOpleidingscode']; ?> </td>
             </tr>
             <?php
         }
